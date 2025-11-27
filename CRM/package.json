@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "echo \"No frontend build required\"",
+    "build": "mkdir -p dist && echo \"Placeholder build output\" > dist/index.html",
     "start": "echo \"No start command defined\""
   }
 }
