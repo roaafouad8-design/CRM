@@ -1,0 +1,9 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo \"No frontend build required\"",
+    "start": "echo \"No start command defined\""
+  }
+}
