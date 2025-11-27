@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+  h1 Login
+
+  if error
+    p.error-message #{error}
+  if success
+    p.success-message #{success}
+    if userEmail
+      p Logged in as #{userEmail}
+
+  form(method='post', action='/auth/login')
+    div.form-group
+      label(for='email') Email
+      input#email(type='email', name='email', required=true, placeholder='you@example.com')
+    div.form-group
+      label(for='password') Password
+      input#password(type='password', name='password', required=true, minlength='6')
+    button(type='submit') Login
+
+  p
+    | Need an account?
+    a(href='/auth/signup') Create one here

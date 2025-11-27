@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+  h1 Create Account
+
+  if error
+    p.error-message #{error}
+  if success
+    p.success-message #{success}
+    if userEmail
+      p Account for #{userEmail} created.
+
+  form(method='post', action='/auth/signup')
+    div.form-group
+      label(for='email') Email
+      input#email(type='email', name='email', required=true, placeholder='you@example.com')
+    div.form-group
+      label(for='password') Password
+      input#password(type='password', name='password', required=true, minlength='6')
+    button(type='submit') Sign up
+
+  p
+    | Already registered?
+    a(href='/auth/login') Login

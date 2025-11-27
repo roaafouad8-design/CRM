@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f7f8fa;
+  color: #1f2933;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.error-message {
+  padding: 10px;
+  background: #fdecea;
+  color: #b71c1c;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.success-message {
+  padding: 10px;
+  background: #ecfdf3;
+  color: #1b5e20;
+  border: 1px solid #a3d9a5;
+  border-radius: 4px;
+}
